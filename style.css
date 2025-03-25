@@ -15,3 +15,77 @@ html, body {
     scroll-behavior: smooth;
     overflow: hidden;
 }
+
+main {
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    position: fixed;
+    isolation: isolate;
+    z-index: 9;
+    top: 4%;
+    right: 4%;
+}
+
+.nav_header {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+
+    & .nav_menu_btn {
+        font-size: 150%;
+        color: #797979;
+        cursor: pointer;
+    }
+}
+
+.nav_links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 45px;
+    height: 300px;
+    top: 300px;
+    border: 2px solid #797979;
+    border-radius: 20px;
+    transition: 0.5s;
+    z-index: -1;
+    transform: translateX(250%);
+}
+
+.nav_links.open {
+    transform: translateX(-15px);
+}
+
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    align-content: center;
+    height: 100%;
+}
+
+li {
+    text-align: center;
+    padding: 8px 10px;
+}
+
+li a {
+    font-size: 22px;
+    font-weight: 800;
+    color: white;
+}
+
+li a:hover {
+    color: #28E98C;
+    transition: all 0.5s ease-out;
+}
+
+.active {
+    color: #28E98C;
+}
+
