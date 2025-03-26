@@ -296,13 +296,13 @@ li a:hover {
             color: #797979;
 
             & i {
-                font-size: 12px;
+                font-size: 0.75rem;
             }
 
             & h1 {
                 font-weight: 600;
                 margin-left: 10%;
-                font-size: 12px;
+                font-size: 0.75rem;
             }
         }
     }
@@ -348,37 +348,83 @@ li a:hover {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    color: white;
+
+    & h1 {
+        position: relative;
+        top: 7%;
+        left: 31%;
+        font-size: 2.8rem;
+    }
+}
+
+.portIcon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 4%;
+    left: 35%;
+    width: 4.2%;
+    height: 3.5%;
+    padding: 0.5%;
+    border: 2px solid #797979;
+    border-radius: 50px;
+    color: #797979;
+
+    & h2 {
+        font-size: 0.75rem;
+        font-weight: 600;
+        margin-left: 0.2rem;
+    }
+
+    & i {
+        font-size: 0.75rem;
+    }
 }
 
 .projects {
+    display: flex;
     width: 55%;
     margin-top: 2%;
-    margin-left: 35%;
+    margin-left: 20%;
     margin-bottom: 3%;
     color: white;
     /* background-color: #28E98C; */
 
-    & h1 {
-        margin-top: 1%;
-        font-size: 2.8rem;
-    }
-
     & .allProjects {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        width: 100%;
-        height: 46%;
+        /* gap: 3%; */
+        width: 50%;
+        height: 90%;
+        margin-top: 9%;
         /* background-color: orange; */
 
         & a {
-            width: 49%;
-            /* background-color: red; */
+            width: 95%;
         }
 
         & a img {
+            display: block;
             width: 100%;
-            height: 22rem;
+            height: 17rem;
+        }
+    }
+
+    .techIcons {
+        align-self: self-start;
+        margin-left: 0.85rem;
+        margin-bottom: 10%;
+
+        & h2 {
+            font-weight: 400;
+        }
+
+        & i {
+            font-size: 2rem;
         }
     }
 }
