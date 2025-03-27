@@ -38,7 +38,7 @@ images.forEach(function(image) {
 
   image.addEventListener('mouseout', function() {
     setTimeout(function() {
-        image.src = image.src.replace('ToDoGIF.gif', 'ToDoUnchecked.png').replace('image4', 'image3').replace('image6', 'image5');
+        image.src = image.src.replace('ToDoGIF.gif', 'ToDoUnchecked.png').replace('MemoryGame.gif', 'MemoryGame.png').replace('image6', 'image5');
     }, 300);
   });
 });

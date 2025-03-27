@@ -407,19 +407,19 @@ li a:hover {
 
         & a {
             height: auto;
-            width: 95%;
+            width: 90%;
         }
 
         & a img {
             display: block;
             width: 100%;
-            height: auto;
+            height: 16rem;
         }
     }
 
     .techIcons {
         align-self: self-start;
-        margin-left: 0.85rem;
+        margin-left: 1.8rem;
         margin-bottom: 10%;
 
         & h2 {
@@ -431,5 +431,4 @@ li a:hover {
         }
     }
 }
-
 
