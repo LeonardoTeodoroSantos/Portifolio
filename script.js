@@ -27,14 +27,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-const image = document.getElementById('imageProject');
+const images = document.querySelectorAll('.projectImage');
 
-// Função para alterar a imagem quando o mouse passar por cima
-image.addEventListener('mouseover', function() {
-  image.src = 'images/Projects/ToDoGIF.gif'; // Troca para a segunda imagem
-});
+images.forEach(function(image) {
+  image.addEventListener('mouseover', function() {
+    setTimeout(function() {
+        image.src = image.getAttribute('data-hover');
+    }, 500);
+  });
 
-// Função para restaurar a imagem original quando o mouse sair
-image.addEventListener('mouseout', function() {
-  image.src = 'images/Projects/ToDoUnchecked.png'; // Volta para a imagem original
+  image.addEventListener('mouseout', function() {
+    setTimeout(function() {
+        image.src = image.src.replace('ToDoGIF.gif', 'ToDoUnchecked.png').replace('image4', 'image3').replace('image6', 'image5');
+    }, 300);
+  });
 });
