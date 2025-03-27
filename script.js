@@ -26,3 +26,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+const image = document.getElementById('imageProject');
+
+// Função para alterar a imagem quando o mouse passar por cima
+image.addEventListener('mouseover', function() {
+  image.src = 'images/Projects/ToDoGIF.gif'; // Troca para a segunda imagem
+});
+
+// Função para restaurar a imagem original quando o mouse sair
+image.addEventListener('mouseout', function() {
+  image.src = 'images/Projects/ToDoUnchecked.png'; // Volta para a imagem original
+});
